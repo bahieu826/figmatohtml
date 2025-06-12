@@ -1,9 +1,74 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
-body{
-    font-size: 1.5rem;
+body {
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  height: 1000px;
+}
+a {
+  text-decoration: none;
+}
+.header .body {
+  display: flex;
+}
+.nav ul {
+  display: flex;
+}
+.main-content {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+.nav {
+  margin-left: auto;
+}
+.nav a {
+  font-size: 1.6rem;
+  color: #5f5b53;
+  padding: 8px 21px;
+  position: relative;
+}
+.nav li.action a,
+.nav a:hover {
+  color: rgb(179, 11, 11);
+  text-decoration: underline;
+  text-shadow: 1px 0 0 currentColor;
+}
+.header .body{
+    align-items: center;
+    padding: 36px 0 8px;
+}
+.nav li.action a::after {
+  content: "";
+  position: absolute;
+  left: 21px;
+  top: 26px;
+  display: block;
+  width: 11px;
+  height: 2px;
+  background-color: black;
+  border-radius: 1px;
+}
+.btn {
+  display: block;
+  padding: 0 16px;
+  text-align: center;
+ min-width: 118px;
+  line-height: 50px;
+  font-weight: 600;
+  border-radius: 999px;
+}
+.btn-sign-up {
+  background-color: black;
+  margin-left: 49px;
+}
+.header{
+    background-color: violet;
+    position:sticky;
+    top:-26px;
 }
